@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="BarreraPU" transaction-type="JTA">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <jta-data-source>jdbc/barrera</jta-data-source>
+    <class>com.lam.entidades.CalendarioProceso</class>
+    <class>com.lam.entidades.CfdiRecibo</class>
+    <class>com.lam.entidades.ClaseNomina</class>
+    <class>com.lam.entidades.ListadoRecibosCfdi</class>
+    <class>com.lam.entidades.TipoNomina</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <validation-mode>NONE</validation-mode>
+    <properties>
+      <property name="eclipselink.canonicalmodel.subpackage" value="com.lam.ws.barrera"/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="CeniccoPU" transaction-type="JTA">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <jta-data-source>jdbc/cenicco</jta-data-source>
+    <class>com.lam.entidades.cenicco.TimbreRecibo</class>
+    <class>com.lam.entidades.cenicco.Usuario</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <validation-mode>NONE</validation-mode>
+    <properties>
+      <property name="eclipselink.canonicalmodel.subpackage" value="com.lam.ws.cenicco"/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="BarreraCeniccoPU" transaction-type="JTA">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <jta-data-source>jdbc/barreracenicco</jta-data-source>
+    <class>com.lam.entidades.servicio.AdelantoVacaciones</class>
+    <class>com.lam.entidades.servicio.Asentamiento</class>
+    <class>com.lam.entidades.servicio.Banco</class>
+    <class>com.lam.entidades.servicio.CatalogoConcepto</class>
+    <class>com.lam.entidades.servicio.CatalogoGeneral</class>
+    <class>com.lam.entidades.servicio.CatalogoGrupoConcepto</class>
+    <class>com.lam.entidades.servicio.CatalogoGrupoPension</class>
+    <class>com.lam.entidades.servicio.Ciudad</class>
+    <class>com.lam.entidades.servicio.ColumnaTabulador</class>
+    <class>com.lam.entidades.servicio.Compania</class>
+    <class>com.lam.entidades.servicio.Concepto</class>
+    <class>com.lam.entidades.servicio.ConceptoLista</class>
+    <class>com.lam.entidades.servicio.ConfiguracionVacaciones</class>
+    <class>com.lam.entidades.servicio.Contacto</class>
+    <class>com.lam.entidades.servicio.CuentaBancaria</class>
+    <class>com.lam.entidades.servicio.Departamento</class>
+    <class>com.lam.entidades.servicio.Documento</class>
+    <class>com.lam.entidades.servicio.Domicilio</class>
+    <class>com.lam.entidades.servicio.Empleado</class>
+    <class>com.lam.entidades.servicio.Estado</class>
+    <class>com.lam.entidades.servicio.Estructura</class>
+    <class>com.lam.entidades.servicio.EstructuraColumna</class>
+    <class>com.lam.entidades.servicio.EstructuraDatos</class>
+    <class>com.lam.entidades.servicio.EstructuraLista</class>
+    <class>com.lam.entidades.servicio.EstructuraRelacion</class>
+    <class>com.lam.entidades.servicio.Formula</class>
+    <class>com.lam.entidades.servicio.GrupoConcepto</class>
+    <class>com.lam.entidades.servicio.GrupoPago</class>
+    <class>com.lam.entidades.servicio.Incidencia</class>
+    <class>com.lam.entidades.servicio.Infonavit</class>
+    <class>com.lam.entidades.servicio.InfonavitHistorico</class>
+    <class>com.lam.entidades.servicio.Municipio</class>
+    <class>com.lam.entidades.servicio.Pais</class>
+    <class>com.lam.entidades.servicio.Pension</class>
+    <class>com.lam.entidades.servicio.Periodo</class>
+    <class>com.lam.entidades.servicio.PosicionSueldo</class>
+    <class>com.lam.entidades.servicio.PosicionSueldoHistorico</class>
+    <class>com.lam.entidades.servicio.Puesto</class>
+    <class>com.lam.entidades.servicio.RegistroPatronal</class>
+    <class>com.lam.entidades.servicio.RelacionLaboral</class>
+    <class>com.lam.entidades.servicio.RelacionLaboralPosicion</class>
+    <class>com.lam.entidades.servicio.SaldoVacaciones</class>
+    <class>com.lam.entidades.servicio.SistemaAntiguedad</class>
+    <class>com.lam.entidades.servicio.SolicitudVacaciones</class>
+    <class>com.lam.entidades.servicio.TabuladorSistemaAntiguedad</class>
+    <class>com.lam.entidades.servicio.TipoAsentamiento</class>
+    <class>com.lam.entidades.servicio.TipoContacto</class>
+    <class>com.lam.entidades.servicio.TipoDocumento</class>
+    <class>com.lam.entidades.servicio.TipoProceso</class>
+    <class>com.lam.entidades.servicio.TipoRelacionLaboral</class>
+    <class>com.lam.entidades.servicio.TipoSueldo</class>
+    <class>com.lam.entidades.servicio.Turno</class>
+    <class>com.lam.entidades.servicio.AcumuladoConcepto</class>
+    <class>com.lam.entidades.servicio.Poliza</class>
+    <class>com.lam.entidades.servicio.Liquidacion</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <shared-cache-mode>NONE</shared-cache-mode>
+    <validation-mode>NONE</validation-mode>
+    <properties>
+      <property name="eclipselink.canonicalmodel.subpackage" value="com.lam.ws.barreracenicco"/>
+      <property name="eclipselink.ddl-generation" value="create-tables"/>
+    </properties>
+  </persistence-unit>
+</persistence>
